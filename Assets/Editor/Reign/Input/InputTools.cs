@@ -55,7 +55,7 @@ namespace Reign.EditorTools
 
 				case BuildTarget.StandaloneOSXIntel:
 				case BuildTarget.StandaloneOSXIntel64:
-				case BuildTarget.StandaloneOSXUniversal:
+				case BuildTarget.StandaloneOSX:
 					saveActiveLayoutAsDefault("OSX");
 					break;
 
@@ -68,7 +68,7 @@ namespace Reign.EditorTools
 				#if UNITY_5
 				case BuildTarget.WSAPlayer:
 				#else
-				case BuildTarget.MetroPlayer:
+				case BuildTarget.WSAPlayer:
 				#endif
 					saveActiveLayoutAsDefault("WinRT");
 					break;
@@ -80,7 +80,7 @@ namespace Reign.EditorTools
 				#if UNITY_5
 				case BuildTarget.iOS:
 				#else
-				case BuildTarget.iPhone:
+				case BuildTarget.iOS:
 				#endif
 					saveActiveLayoutAsDefault("iOS");
 					break;
@@ -101,10 +101,10 @@ namespace Reign.EditorTools
 					saveActiveLayoutAsDefault("SamsungTV");
 					break;
 
-				case BuildTarget.WebPlayer:
-				case BuildTarget.WebPlayerStreamed:
-					saveActiveLayoutAsDefault("WebPlayer");
-					break;
+				//case BuildTarget.WebPlayer:
+				//case BuildTarget.WebPlayerStreamed:
+				//	saveActiveLayoutAsDefault("WebPlayer");
+				//	break;
 
 				#if UNITY_5
 				case BuildTarget.WebGL:
@@ -149,7 +149,7 @@ namespace Reign.EditorTools
 
 				case BuildTarget.StandaloneOSXIntel:
 				case BuildTarget.StandaloneOSXIntel64:
-				case BuildTarget.StandaloneOSXUniversal:
+				case BuildTarget.StandaloneOSX:
 					applyDefaultLayout("OSX");
 					break;
 
@@ -162,7 +162,7 @@ namespace Reign.EditorTools
 				#if UNITY_5
 				case BuildTarget.WSAPlayer:
 				#else
-				case BuildTarget.MetroPlayer:
+				case BuildTarget.WSAPlayer:
 				#endif
 					applyDefaultLayout("WinRT");
 					break;
@@ -174,7 +174,7 @@ namespace Reign.EditorTools
 				#if UNITY_5
 				case BuildTarget.iOS:
 				#else
-				case BuildTarget.iPhone:
+				case BuildTarget.iOS:
 				#endif
 					applyDefaultLayout("iOS");
 					break;
@@ -195,10 +195,10 @@ namespace Reign.EditorTools
 					applyDefaultLayout("SamsungTV");
 					break;
 
-				case BuildTarget.WebPlayer:
-				case BuildTarget.WebPlayerStreamed:
-					applyDefaultLayout("WebPlayer");
-					break;
+				//case BuildTarget.WebPlayer:
+				//case BuildTarget.WebPlayerStreamed:
+				//	applyDefaultLayout("WebPlayer");
+				//	break;
 
 				#if UNITY_5
 				case BuildTarget.WebGL:

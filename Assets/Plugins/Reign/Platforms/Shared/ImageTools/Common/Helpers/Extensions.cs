@@ -14,7 +14,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 #if !UNITY_METRO || UNITY_EDITOR
-using System.Collections.ObjectModel.Reign;
+using System.Collections.ObjectModel;
 #endif
 using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Contracts.Reign;
